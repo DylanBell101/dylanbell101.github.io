@@ -1,0 +1,67 @@
+<!--Makes code appear onto the webpage-->
+<!DOCTYPE html>
+<!--Shows the start of HTML content-->
+<html>
+    <!--Creates a container for metadata -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Changes tab name-->
+        <title>     
+            Dylan's Resume
+        </title>
+        <!--Refers to an external file using the current document-->
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+        <link rel="stylesheet" href="mystyle.css">
+        <!--Makes an internal stylesheet-->
+        <style>
+            img {
+                border: 10px solid black;
+                width: 25%;
+                height: 25%;
+                border-radius: 30px;
+            }
+            .button {
+                background-color: #000000;
+                border: 10px solid white;
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                transition-duration: 0.4s;
+                cursor: pointer;
+                font-size: 30px;
+                margin: 4px 2px;
+                box-shadow: 0 8px #999;
+                outline: none;
+                padding: 15px 25px;
+                border-radius: 15px;
+            }
+            .button:hover {
+                background-color: #ffffff;
+                border: 10px solid black;
+                color: black;
+            }
+            .button:active {
+                background-color: #ffffff;
+                box-shadow: 0 5px #666;
+                transform: translateY(15px);
+            }
+        </style>
+    </head>
+    <!--Creates a container for webpage content-->
+    <body>
+        <div class="background"></div>
+        <div class="content">
+            <img src="images/me.jpg">
+            <div class="outlined-text">
+                <h1><strong>
+                    Welcome to My Website
+                </strong></h1>
+            </div>
+            <p>
+                <a href="home.html"><button class="button">Click Here to Enter</button></a>
+            </p>
+        </div>
+    </body>
+</html>
